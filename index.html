@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sociogram</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div></div>
+        <div class="numberone">
+            <form class="pretty">
+                <h1>Fyll i deltagarnas namn eller klistra in en lista brevid => </h1>
+                <input type="text" id="addname" placeholder="Namn..." required>
+                <button type="button" id="btnAddNext">Lägg till person</button>
+                <button type="button" id="btnClearAdd">Rensa</button>
+            </form>
+            <div class="shadow"></div>
+        </div>
+        <div class="numberonehalf">
+            <form class="pretty">
+                <h1>Klistra in namnen, ett namn/rad</h1>
+                <textarea id="addText" rows="10"></textarea>
+                <button type="button" id="btnAddtextarea">Lägg till</button>
+                <!-- <button type="button" id="btnClearTextarea">Rensa</button> -->
+            </form>
+            <div class="shadow"></div>
+        </div>
+        <div>
+            <div class="pretty">
+                <h1>Färdiga för koppling</h1>
+                <div id="participants">
+
+                </div>
+            </div>
+        </div>
+        <div class="numbertwo">
+            <form class="pretty">
+                <h1>Koppla samman koderna (Steg 2)</h1>
+                <select id="name">
+
+                </select>
+                <!-- <input type="number" id="name" placeholder="Namn..." required> -->
+                <input type="number" id="like1" placeholder="Gillar #1" required>
+                <input type="number" id="like2" placeholder="Gillar #2" required>
+                <input type="number" id="like3" placeholder="Gillar #3" required>
+
+                <button type="button" id="btnNext">Nästa person</button>
+                <button type="button" id="btnDone">Klar</button>
+            </form>
+            <div class="shadow"></div>
+        </div>
+        <div></div>
+    </div>
+    <!-- <canvas id="container"></div> -->
+    <script src="js/konva.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
